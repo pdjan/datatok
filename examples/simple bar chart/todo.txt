@@ -1,0 +1,27 @@
+Possible todos:
+
+
+Style with CSS
+
+Use .bar, .axis-label, etc., in your <style> to improve appearance.
+
+
+
+Test and Iterate
+
+Open the HTML file in a browser and make adjustments:
+
+Adjust margins, fonts, bar width, colors.
+
+Hook it up to dynamic data or external CSV/JSON.
+
+
+
+Load data from csv
+
+d3.csv("data.csv").then(data => {
+  data.forEach(d => {
+    d.value = +d.value;
+  });
+  // Then use the same logic as above
+});
